@@ -49,7 +49,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -64,3 +64,142 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+  }
+  
+  header {
+	position: fixed;
+	display: flex;
+	width: 900px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 0;
+	background-color: white;
+  }
+  
+  header nav a {
+	color:gray;
+	margin-right: 40px;
+  }
+  
+  .Title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 650px;
+	
+  }
+  
+  .Title div {
+	text-align: center;
+	margin: 0 auto;
+  }
+  
+  .Title div h1 {
+	font-size: 70px;
+	text-align: center;
+	margin-bottom: 25px;
+  }
+  
+  .Title div a {
+	text-decoration: none;
+	color:black;
+	padding: 2px 30px;
+	border: 1px solid black;
+
+  }
+  
+  .Title span {
+	background-image: url(../img/header-img.png);
+	width: 400px;
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+	border-radius: 50%;
+  }
+  .body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .body div {
+	margin: 50px 0;
+  }
+  
+  .body .middle-img {
+	width: 100%;
+  }
+  
+  .body div:nth-of-type(1),
+  .body div:nth-of-type(2) {
+	width: 50%;
+  }
+  
+  .body div:nth-of-type(3),
+  .body div:nth-of-type(4),
+  .body div:nth-of-type(5) {
+	width: 32%;
+  }
+  
+  .info {
+	margin-top: 50px;
+  }
+  
+  .info > * {
+	margin: 20px 0;
+  }
+  
+  .info a {
+	color: black;
+	text-decoration: none;
+	display: block;
+  }
+  
+  footer {
+	text-align: center;
+	margin: 75px auto;
+  }
+  
+  @media only screen and (max-width: 890px) {
+	
+	header {
+	  position: fixed;
+	  display: flex;
+	  width: 100%;
+	  flex-direction: column-reverse;
+	  align-items: center;
+	  justify-content: space-between;
+	  padding: 30px 0 0 0;
+	  background-color:white;
+	}
+  
+	header img {
+	  margin-bottom: 20px;
+	  height: 20px;
+	}
+  
+	header nav {
+	  text-align: center;
+	}
+  
+	header nav a {
+	  color: white;
+	  text-decoration: none;
+	  display: inline-block;
+	  margin: 0 5px 20px 5px;
+	}
+	
+	.Title {
+	  flex-direction: column-reverse;
+	  justify-content: center;
+	}
+	.Title span {
+	  height: 100px;
+	  width: 100px;
+	}
+  }
+  
+	
