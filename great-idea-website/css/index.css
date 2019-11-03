@@ -67,139 +67,77 @@ h1, h2, h3, h4, h5 {
 .container {
 	max-width: 900px;
 	margin: 0 auto;
-  }
-  
-  header {
-	position: fixed;
-	display: flex;
-	width: 900px;
-	align-items: center;
-	justify-content: space-between;
-	padding: 30px 0;
-	background-color: white;
-  }
-  
-  header nav a {
+
+	/* Header */
+}
+header nav{
+	display: inline-block;
+	margin-top: 40px;
+
+}
+header nav a {
 	color:gray;
-	margin-right: 40px;
-  }
-  
-  .Title {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	height: 650px;
-	
-  }
-  
-  .Title div {
-	text-align: center;
-	margin: 0 auto;
-  }
-  
-  .Title div h1 {
-	font-size: 70px;
-	text-align: center;
-	margin-bottom: 25px;
-  }
-  
-  .Title div a {
+	margin: 0 20px;
 	text-decoration: none;
-	color:black;
-	padding: 2px 30px;
-	border: 1px solid black;
 
   }
-  
-  .Title span {
-	background-image: url(../img/header-img.png);
-	width: 400px;
-	background-position: center;
-	background-size: cover;
-	height: 400px;
-	border-radius: 50%;
+  header .logo{
+	  margin-left: 140px; 
   }
-  .body {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-  }
-  
-  .body div {
-	margin: 50px 0;
-  }
-  
-  .body .middle-img {
-	width: 100%;
-  }
-  
-  .body div:nth-of-type(1),
-  .body div:nth-of-type(2) {
-	width: 50%;
-  }
-  
-  .body div:nth-of-type(3),
-  .body div:nth-of-type(4),
-  .body div:nth-of-type(5) {
-	width: 32%;
-  }
-  
-  .info {
-	margin-top: 50px;
-  }
-  
-  .info > * {
-	margin: 20px 0;
-  }
-  
-  .info a {
-	color: black;
+  /* Top Content */
+.Top{
+	margin-top: 60px;
+	border-bottom: 1px solid black;
+}
+.Top div{
+display: inline-block;
+margin-left: 75px;
+margin-top: 50px;
+text-align: center;
+vertical-align: top;
+}
+.Top div h1{
+	font-size: 75px;
+}
+.Top div button{
 	text-decoration: none;
-	display: block;
-  }
-  
-  footer {
+	color:black;
+	padding: 7px 30px;
+
+}
+.Top img{
+	margin-left: 100px;
+	margin-bottom: 50px;
+}
+/* Body Content */
+.body{
+
+}
+.body div{
+	display: inline-block;
+	width: 46%;
+	margin: 35px 15px;
+	
+}
+.middle-img{
+width: 100%;
+margin-right: 10px;
+}
+.body2{
+	border-bottom: 1px solid black;
+}
+.body2 div{
+	display: inline-block;
+	width: 31%;
+	margin: 35px 5px;
+}
+/* Info */
+.info{
+	margin-top: 40px;
+	margin-bottom: 35px;
+}
+footer{
 	text-align: center;
-	margin: 75px auto;
-  }
-  
-  @media only screen and (max-width: 890px) {
-	
-	header {
-	  position: fixed;
-	  display: flex;
-	  width: 100%;
-	  flex-direction: column-reverse;
-	  align-items: center;
-	  justify-content: space-between;
-	  padding: 30px 0 0 0;
-	  background-color:white;
-	}
-  
-	header img {
-	  margin-bottom: 20px;
-	  height: 20px;
-	}
-  
-	header nav {
-	  text-align: center;
-	}
-  
-	header nav a {
-	  color: white;
-	  text-decoration: none;
-	  display: inline-block;
-	  margin: 0 5px 20px 5px;
-	}
-	
-	.Title {
-	  flex-direction: column-reverse;
-	  justify-content: center;
-	}
-	.Title span {
-	  height: 100px;
-	  width: 100px;
-	}
-  }
-  
-	
+	margin-bottom: 75px;
+}
+
