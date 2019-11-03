@@ -49,7 +49,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -64,3 +64,80 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+
+	/* Header */
+}
+header nav{
+	display: inline-block;
+	margin-top: 40px;
+
+}
+header nav a {
+	color:gray;
+	margin: 0 20px;
+	text-decoration: none;
+
+  }
+  header .logo{
+	  margin-left: 140px; 
+  }
+  /* Top Content */
+.Top{
+	margin-top: 60px;
+	border-bottom: 1px solid black;
+}
+.Top div{
+display: inline-block;
+margin-left: 75px;
+margin-top: 50px;
+text-align: center;
+vertical-align: top;
+}
+.Top div h1{
+	font-size: 75px;
+}
+.Top div button{
+	text-decoration: none;
+	color:black;
+	padding: 7px 30px;
+
+}
+.Top img{
+	margin-left: 100px;
+	margin-bottom: 50px;
+}
+/* Body Content */
+.body{
+
+}
+.body div{
+	display: inline-block;
+	width: 46%;
+	margin: 35px 15px;
+	
+}
+.middle-img{
+width: 100%;
+margin-right: 10px;
+}
+.body2{
+	border-bottom: 1px solid black;
+}
+.body2 div{
+	display: inline-block;
+	width: 31%;
+	margin: 35px 5px;
+}
+/* Info */
+.info{
+	margin-top: 40px;
+	margin-bottom: 35px;
+}
+footer{
+	text-align: center;
+	margin-bottom: 75px;
+}
+
